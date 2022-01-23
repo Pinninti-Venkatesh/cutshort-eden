@@ -1,5 +1,4 @@
 import "./App.css";
-import TextInput from "./textInput";
 import logo from "./edenIcon.png";
 import { useState } from "react";
 import Stage1 from './Stage1';
@@ -18,6 +17,8 @@ function App() {
         return <Stage3 changeStage={()=>{changeStage(4)}}></Stage3>;
       case 4:
         return <Stage4></Stage4>
+      default:
+        return <Stage1 changeStage={()=>{changeStage(2)}}></Stage1>;
     }
   }
   function changeStage(stageNum){
@@ -26,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <div className="title">
-        <img src={logo}></img>
+        <img src={logo} alt="icon"></img>
         <div className="title-name">Eden</div>
       </div>
       <ul class="progressbar">

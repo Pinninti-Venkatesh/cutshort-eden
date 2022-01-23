@@ -6,7 +6,7 @@ import team from "./teams.svg";
 export default function PlanSelector() {
   const [mySelfActive, setActive] = useState(true);
   function selectCard(card) {
-    if (card == "myself") {
+    if (card === "myself") {
       setActive(true);
     } else {
       setActive(false);

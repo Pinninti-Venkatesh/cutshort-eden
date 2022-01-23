@@ -1,8 +1,6 @@
 // @flow
 import * as React from "react";
 import { Button } from "./Button";
-
-import { Card } from "./Card";
 import PlanSelector from "./PlanSelector";
 export default function Stage3({changeStage}) {
   return (

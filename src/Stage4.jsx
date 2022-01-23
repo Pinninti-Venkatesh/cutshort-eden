@@ -6,7 +6,7 @@ export default function Stage4() {
   return (
     <div className="stage">
       <div className="stageMessage">
-      <div className='icon' style={{'-webkit-mask': "url("+CheckCircle+") no-repeat",}} className="final-check"/>
+      <div style={{'-webkit-mask': "url("+CheckCircle+") no-repeat",}} className="final-check"/>
         <div className="main">Congratulations,Eden!</div>
         <div className="sub">
           You have completed onboarding,you can start using the Eden!
